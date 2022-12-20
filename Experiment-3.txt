@@ -1,0 +1,9 @@
+Use the date and who command in one line , such that the output of date is displayed on the screen and output of who is redirected to a file.
+
+
+Command :-  date ; who > filename.txt
+
+
+Write a Sed command that swaps the first and second word in each line in a file
+
+Command :- sed -e “s/\([^]*\)*\([^]\)/\2\1/g”

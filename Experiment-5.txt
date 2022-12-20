@@ -1,0 +1,10 @@
+Use the who command and direct the result a file called myfile1. Use the more command to see the content of file1.
+
+Command :-  $who,H > myfile1.txt
+                      $who.d myfile.txt
+
+
+Use the date and who command in sequence such that output of data will display on the screen and output of who will be redirected to a file called myfile.
+
+Command :- $data; who.H > myfile
+                     more  -d myfile.txt

@@ -1,0 +1,22 @@
+Write a shell script that takes a command line argument and reports on whether it is a directory or a file.
+
+Command :- echo “ Enter File name”
+read str
+if testv-f $str
+then
+echo “It is a file”
+else
+echo”It is a directory”
+fi
+
+
+Write a shell script that takes a filename as argument and converts all of them to uppercase
+
+Command :- echo “Enter file name”
+read filename
+if [ ! -f $filename ]
+then
+echo “filename $filename does not exist “
+exit 1
+fi
+tr '[a-z]' '[A-z]' < $filename

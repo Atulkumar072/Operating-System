@@ -1,0 +1,4 @@
+Observe and understand the process map of the previous two labs using the pmap command
+
+
+Command:-    pmap [option]  pid[...]

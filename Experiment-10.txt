@@ -1,0 +1,29 @@
+Write a c program that creates a child process and wait for the termination of the child and list its pid
+
+
+
+Command :-
+
+#include<stdio.h>
+#include<unistd.h>
+#include<sys/types,h>
+#include<sys/wait.h>
+
+int main(){
+pid -t p;
+printf(“Before fork\n”);
+p = fork();
+if(p==0)
+{
+printf(“I am child having id %d”,getpid());
+printf(“My parent is %d” getpid());
+}
+else
+{
+wait(NULL);
+printf(“My child is id is %d “ p);
+printf(“I am parent having id “getpid());
+}
+printf(“Common”);
+return 0;
+}

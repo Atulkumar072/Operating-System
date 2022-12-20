@@ -1,0 +1,27 @@
+Write a c program that takes a command line argument , the number of megabytes of memory it will use and during execution it should consume that much memory. Observe memory usage during program execution using free command.
+
+Command :- 
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
+#include<unistd.h>
+int main(argi,char *argv[]){
+printf(“Current process id %d\n”, get pid());
+long long int size = ((long long int)a to i(argv[i]));
+int * buffer == (int*) malloc(size);
+time-t end wait,second, start;
+second = atai(argi[2]);
+start = time(NULL);
+end wait = start + seconds;
+while(start < end wait){
+printf(“”);
+fflush(stdout):
+for(long long int i = 0; i<size/sizeof(int);++i){
+buffer[i] = i;
+}
+start = time(NULL);
+}
+printf(“Done\n”);
+return 0;
+}

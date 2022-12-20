@@ -1,0 +1,19 @@
+Write a shell script to perform the fallowing string operations
+
+To Extract a substring from a given string
+
+Command:- echo 'Enter the string”
+                    read str
+                    echo “Enter the starting point”
+                    read a 
+	         echo”Enter the ending point”
+	         read b
+	         echo “The substring is “
+	         echo  ${ str : a:b }
+
+To find the length og a given string
+
+Command :-  echo “Enter the string”
+		read str
+		echo”The length of the string is”
+		echo ${#str}		

@@ -1,0 +1,52 @@
+Write a cpu bound program and I/O bound progran,Observe the effect of their cpu sharing using top command.
+
+
+Command :-
+
+#include<stdio.h>
+int main(){
+int A[50][50],B[50][50],C[50][50];
+int r,c,p,r,sum=0;
+printf(“Enter the size of 1st array”);
+scanf(“%d %d “,&r,&c);
+printf(“Enter size of the 2nd array “);
+scanf(“%d %d” , &p,&q);
+printf(“Enter the first matrix”);
+for(int i =0;i<r;++i){
+for(int j =0;j<c;++j);{
+scanf(“%d %d”,&A[i][j]);
+}
+printf(“Enter Second matrix”);
+for(int i =0;i<r,++i){
+for(int j =0;j<q;++q){
+scanf(“%d %d “, &B[i][j]);
+}
+printf(“First matrix is : “);
+for(int i =0 ; i<r; ++i){
+for(int j =0; j<c; ++j){
+printf(“%d',A[i][j]);
+}
+printf(“Second matrix is : “);
+for(int i =0 ; i<r; ++i){
+for(int j =0; j<c; ++j){
+printf(“%d',B[i][j]);
+}
+if(c==p){
+for(int i =0; i<r;++i){
+for(int j =0; i<q;++q){
+sum =0;
+for(int k =0; k<i;k++){
+sum = A[i][k] * B[k][j];
+}
+c[i][j] = sum;
+}}
+printf(“Multiplication of two matrices is “);
+for(int i =0; i<r; ++i)
+printf(“%d”,C[i][j])
+printf(“\n”);
+}}
+else
+{
+printf(“Can't Multiply”);
+return 0;}
+
