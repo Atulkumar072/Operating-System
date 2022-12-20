@@ -1,0 +1,22 @@
+Program to find the type of triangle by reading sides.
+
+Command:-
+echo “Enter side AB”
+read S1
+echo “Enter side BC”
+read S2
+echo “Enter side AC”
+read S3
+if [ $S1 != S2 ] && [ $S2 != $S3 ] && [ $S3 != $S1 ]
+then 
+echo “Scalene Traingle”
+elif [ $S1 == S2 ] && [ $S2 == $S3 ] && [ $S3 == $S1 ]
+then 
+echo “Equilateral Traingle”
+elif [ $S1 == S2 ] || [ $S2 == $S3 ] || [ $S3 == $S1 ]
+then 
+echo “Isoceles Traingle”
+fi
+
+
+
