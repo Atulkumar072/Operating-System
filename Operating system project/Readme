@@ -1,0 +1,6 @@
+This project is about different types of cpu schedluings algorithm :-
+First come first serve.
+Round Robin.
+Priority.
+Shortest job first.
+Shortest remaining time first.
